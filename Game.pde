@@ -51,8 +51,8 @@ public class Game
   {
     if (birdY < 0 || birdY > height)
     {
-      hit.play();
-      hit.rewind();
+     // hit.play();
+     // hit.rewind();
       game = false;
       birdX = width/4;
       birdY = height/2;
@@ -79,8 +79,8 @@ public class Game
   { 
     if ( circleX + rad >= pipeX && circleX + rad <= pipeX + 45.0  && ((circleY -  rad <= pipe1Y + pipe1.height) || (circleY + rad >= pipe2Y)))
     {
-      hit.play();
-      hit.rewind();
+      //hit.play();
+      //hit.rewind();
       delay(50);
       game = false;
       g = new Game();
@@ -92,8 +92,8 @@ public class Game
     if (circleX - rad == pipeX)
     {
       score++; 
-      point.play();
-      point.rewind();
+      //point.play();
+      //point.rewind();
     }
     text("Score: "+ score, width/2, 50);
   }

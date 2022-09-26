@@ -1,6 +1,6 @@
-import ddf.minim.*;
-Minim minim;
-AudioPlayer point,hit,wing;
+//import ddf.minim.*;
+//Minim minim;
+//AudioPlayer point,hit,wing;
 
 Game g;
 boolean game = false;
@@ -12,10 +12,10 @@ void setup()
   PImage titlebaricon = loadImage("icon.jpg");
   surface.setIcon(titlebaricon);
   g = new Game();
-  minim = new Minim(this);
-  point = minim.loadFile("point.wav");
-  hit = minim.loadFile("pipehit.wav");
-  wing = minim.loadFile("fly.wav");
+  //minim = new Minim(this);
+  //point = minim.loadFile("point.wav");
+  //hit = minim.loadFile("pipehit.wav");
+  //wing = minim.loadFile("fly.wav");
   fill(0);
   textAlign(CENTER);
   textSize(50);
@@ -53,6 +53,6 @@ void draw()
 void mousePressed()
 {
   g.birdSpeedY -= 4.25;
-  wing.play();
-  wing.rewind();
+  //wing.play();
+  //wing.rewind();
 }
